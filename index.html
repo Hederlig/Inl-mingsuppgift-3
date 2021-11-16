@@ -1,48 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DC Quiz</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>DC Quiz</h1>
-    
-    <button id="changeButton" type="button">
-        Change Mode
-      </button>
-<!-- Tre frågor ska bestå av ett påstående. Svarsalternativ: Sant och falskt. -->
-    <label for=q1><h3>Fråga 1</h3></label>
-    <div id="q1"></div>
-    <text>Är the Punsiher grym?</text>
 
-    <label for=q2><h3>Fråga 2</h3></label>
-    <div id="q2"></div>
-    <text>Vinner Goku över Superman i en fight?</text>
+    <button id="changeButton" type="button">Change Mode</button>
+    <!-- Tre frågor ska bestå av ett påstående. Svarsalternativ: Sant och falskt. -->
+    <label for="q1"><h3>Fråga 1</h3></label>
+    <div id="q1">
+      <text>Är the Punisher grym?</text>
+      <legend for="type"></legend>
 
-    <label for=q3><h3>Fråga 3</h3></label>
-    <div id="q3"></div>
-    <text>Sommar med Ernst är ett bra program.</text>
+      <input type="radio" name="question1" id="true1" value="true" />
+      <label for="true">True</label>
 
-<!-- Tre frågor ska ha tre svarsalternativ.  -->
-    <label for=q4><h3>Fråga 4</h3></label>
-    <div id="q4"></div>
-    <text>Vad gör koden "radio free zerg" i StarCraft: Brood War?</text>
+      <input type="radio" name="question1" id="false1" value="false" />
+      <label for="false">False</label>
+    </div>
+    <label for="q2"><h3>Fråga 2</h3></label>
+    <div id="q2">
+      <text>Punisher's namn är Frank Castle</text>
+      <legend for="type"></legend>
+      <input type="radio" name="question2" id="true2" value="true" />
+      <label for="all">True</label>
+      <input type="radio" name="question2" id="false2" value="false" />
+      <label for="shoes">False</label>
+    </div>
+    <label for="q3"><h3>Fråga 3</h3></label>
+    <div id="q3">
+      <text>Punisher's militär grundutbildning var U.S.ARMY.</text>
+      <legend for="type"></legend>
+      <input type="radio" name="question3" id="true3" value="true" />
+      <label for="all">True</label>
+      <input type="radio" name="question3" id="false3" value="false" />
+      <label for="shoes">False</label>
+    </div>
+    <!-- Tre frågor ska ha tre svarsalternativ.  -->
+    <label for="q4"><h3>Fråga 4</h3></label>
+    <div id="q4">
+      <text>Vad gör koden "radio free zerg" i StarCraft: Brood War?</text>
+      <legend for="type"></legend>
+      <input type="radio" name="question4" id="alt4" value="alt1" />
+      <label for="alt1">Ger dig en unik enhet</label>
+      <input type="radio" name="question4" id="alt4" value="alt2" />
+      <label for="alt2">Sätter igång Zerg radio</label>
+      <input type="radio" name="question4" id="alt4" value="alt3" />
+      <label for="alt3">Spelar upp en låt</label>
+    </div>
+    <label for="q5"><h3>Fråga 5</h3></label>
+    <div id="q5">
+      <text>Vilken kod ger dig "God Mode" i Warcraft 3</text>
+      <legend for="type"></legend>
+      <input type="radio" name="question5" id="alt5" value="alt5" />
+      <label for="alt5">For The Hord</label>
+      <input type="radio" name="question5" id="alt5" value="alt5" />
+      <label for="alt5">Blizzard is almighty </label>
+      <input type="radio" name="question5" id="alt5" value="alt5" />
+      <label for="alt5">Whos your Daddy</label>
+    </div>
+    <label for="q6"><h3>Fråga 6</h3></label>
+    <div id="q6">
+      <text>Vilken kod gör dig odödlig i spelet DOOM?</text>
+      <legend for="type"></legend>
+      <input type="radio" name="question6" id="alt6" value="alt6" />
+      <label for="alt6">ID10T</label>
+      <input type="radio" name="question6" id="alt6" value="alt6" />
+      <label for="alt6">IDDQD</label>
+      <input type="radio" name="question6" id="alt6" value="alt6" />
+      <label for="alt6">IDKFA</label>
+    </div>
+    <!-- En fråga ska besvaras med checkboxar (minst fyra svarsalternativ) -->
+    <label for="q7"><h3>Fråga 7</h3></label>
+    <div id="q7">
+      <text
+        >Där finns 8 towns i Heroes of Might and Magic 3, vilka 2 är
+        Neutrala?</text
+      >
+      <legend for="type"></legend>
+      <div>
+        <label for="Stronghold">Stronghold</label>
+        <input type="checkbox" name="Stronghold" id="town" value="Stronghold" />
 
-    <label for=q5><h3>Fråga 5</h3></label>
-    <div id="q5"></div>
-    <text>Vilken kod ger dig "God Mode" i Warcraft 3</text>
+        <label for="Tower">Tower</label>
+        <input type="checkbox" name="Tower" id="town" value="Tower" />
 
-    <label for=q6><h3>Fråga 6</h3></label>
-    <div id="q6"></div>
-    <text>Vilken kod gör dig odödlig i spelet DOOM?</text>
+        <label for="Dungeon">Dungeon</label>
+        <input type="checkbox" name="Dungeon" id="town" value="Dungeon" />
+   
+      <label for="Rampart">Rampart</label>
+      <input type="checkbox" name="Rampart" id="town" value="Rampart" />
+    </div>
+      <div>
+        <label for="Fortress">Fortress</label>
+        <input type="checkbox" name="Fortress" id="town" value="Fortress" />
+        <label for="Castle">Castle</label>
+        <input type="checkbox" name="Castle" id="town" value="Castle" />
 
-<!-- En fråga ska besvaras med checkboxar (minst fyra svarsalternativ) -->
-    <label for=q7><h3>Fråga 7</h3></label>
-    <div id="q7"></div>
-    <text>Där finns 8 towns (3 Good, 3 Evil, 2 Neutral) i Heroes of Might and Magic 3, vilka är Neutrala?</text>
-    Castle, Fortress, Stronghold, Dungeon
+        <label for="Inferno">Inferno</label>
+        <input type="checkbox" name="Inferno" id="town" value="Inferno" />
+
+        <label for="Necropolis">Necropolis</label>
+        <input type="checkbox" name="Necropolis" id="town" value="Necropolis" />
+      </div>
+    </div>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

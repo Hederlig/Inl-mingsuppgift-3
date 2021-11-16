@@ -1,5 +1,6 @@
 let button = document.querySelector("#changeButton");
 
+document.body.style.display.center
 
 button.addEventListener("click", () => {
   let body = document.querySelector("body");
