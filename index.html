@@ -82,32 +82,52 @@
         Neutrala?</text
       >
       <legend for="type"></legend>
-      <div>
-        <label for="Stronghold">Stronghold</label>
-        <input type="checkbox" name="Stronghold" id="town" value="Stronghold" />
-
-        <label for="Tower">Tower</label>
-        <input type="checkbox" name="Tower" id="town" value="Tower" />
-
-        <label for="Dungeon">Dungeon</label>
-        <input type="checkbox" name="Dungeon" id="town" value="Dungeon" />
-   
-      <label for="Rampart">Rampart</label>
-      <input type="checkbox" name="Rampart" id="town" value="Rampart" />
+      <ol id="list">
+        <li>
+          <input
+            type="checkbox"
+            name="Stronghold"
+            id="town"
+            value="Stronghold"
+          />
+          <label for="Stronghold">Stronghold</label>
+        </li>
+        <li>
+          <input type="checkbox" name="Tower" id="town" value="Tower" />
+          <label for="Tower">Tower</label>
+        </li>
+        <li>
+          <input type="checkbox" name="Dungeon" id="town" value="Dungeon" />
+          <label for="Dungeon">Dungeon</label>
+        </li>
+        <li>
+          <input type="checkbox" name="Rampart" id="town" value="Rampart" />
+          <label for="Rampart">Rampart</label>
+        </li>
+        <li>
+          <input type="checkbox" name="Fortress" id="town" value="Fortress" />
+          <label for="Fortress">Fortress</label>
+        </li>
+        <li>
+          <input type="checkbox" name="Castle" id="town" value="Castle" />
+          <label for="Castle">Castle</label>
+        </li>
+        <li>
+          <input type="checkbox" name="Inferno" id="town" value="Inferno" />
+          <label for="Inferno">Inferno</label>
+        </li>
+        <li>
+          <input
+            type="checkbox"
+            name="Necropolis"
+            id="town"
+            value="Necropolis"
+          />
+          <label for="Necropolis">Necropolis</label>
+        </li>
+      </ol>
     </div>
-      <div>
-        <label for="Fortress">Fortress</label>
-        <input type="checkbox" name="Fortress" id="town" value="Fortress" />
-        <label for="Castle">Castle</label>
-        <input type="checkbox" name="Castle" id="town" value="Castle" />
-
-        <label for="Inferno">Inferno</label>
-        <input type="checkbox" name="Inferno" id="town" value="Inferno" />
-
-        <label for="Necropolis">Necropolis</label>
-        <input type="checkbox" name="Necropolis" id="town" value="Necropolis" />
-      </div>
-    </div>
+    <button id="getResults">Rätta svaren</button>
     <script src="main.js"></script>
   </body>
 </html>

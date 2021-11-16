@@ -1,6 +1,5 @@
 let button = document.querySelector("#changeButton");
-
-document.body.style.display.center
+let list = document.querySelector("#list").style.listStyle = "none"
 
 button.addEventListener("click", () => {
   let body = document.querySelector("body");
@@ -9,6 +8,6 @@ button.addEventListener("click", () => {
     body.style.color = "black"
   } else {
     body.style.background = "black";
-    body.style.color = "pink"
+    body.style.color = "red"
   }
 });
