@@ -35,9 +35,9 @@
     <div id="q3">
       <text>Punisher's militär grundutbildning var U.S.ARMY.</text>
       <legend for="type"></legend>
-      <input type="radio" name="question3" id="true3" value="true" />
+      <input type="radio" name="question3" id="true3" value="false" />
       <label for="all">True</label>
-      <input type="radio" name="question3" id="false3" value="false" />
+      <input type="radio" name="question3" id="false3" value="true" />
       <label for="shoes">False</label>
     </div>
     <!-- Tre frågor ska ha tre svarsalternativ.  -->
@@ -45,33 +45,33 @@
     <div id="q4">
       <text>Vad gör koden "radio free zerg" i StarCraft: Brood War?</text>
       <legend for="type"></legend>
-      <input type="radio" name="question4" id="alt4" value="alt1" />
+      <input type="radio" name="question4" id="alt4" value="false" />
       <label for="alt1">Ger dig en unik enhet</label>
-      <input type="radio" name="question4" id="alt4" value="alt2" />
+      <input type="radio" name="question4" id="alt4" value="false" />
       <label for="alt2">Sätter igång Zerg radio</label>
-      <input type="radio" name="question4" id="alt4" value="alt3" />
+      <input type="radio" name="question4" id="alt4" value="true" />
       <label for="alt3">Spelar upp en låt</label>
     </div>
     <label for="q5"><h3>Fråga 5</h3></label>
     <div id="q5">
       <text>Vilken kod ger dig "God Mode" i Warcraft 3</text>
       <legend for="type"></legend>
-      <input type="radio" name="question5" id="alt5" value="alt5" />
+      <input type="radio" name="question5" id="alt5" value="false" />
       <label for="alt5">For The Hord</label>
-      <input type="radio" name="question5" id="alt5" value="alt5" />
+      <input type="radio" name="question5" id="alt5" value="false" />
       <label for="alt5">Blizzard is almighty </label>
-      <input type="radio" name="question5" id="alt5" value="alt5" />
+      <input type="radio" name="question5" id="alt5" value="true" />
       <label for="alt5">Whos your Daddy</label>
     </div>
     <label for="q6"><h3>Fråga 6</h3></label>
     <div id="q6">
       <text>Vilken kod gör dig odödlig i spelet DOOM?</text>
       <legend for="type"></legend>
-      <input type="radio" name="question6" id="alt6" value="alt6" />
+      <input type="radio" name="question6" id="alt6" value="false" />
       <label for="alt6">ID10T</label>
-      <input type="radio" name="question6" id="alt6" value="alt6" />
+      <input type="radio" name="question6" id="alt6" value="true" />
       <label for="alt6">IDDQD</label>
-      <input type="radio" name="question6" id="alt6" value="alt6" />
+      <input type="radio" name="question6" id="alt6" value="false" />
       <label for="alt6">IDKFA</label>
     </div>
     <!-- En fråga ska besvaras med checkboxar (minst fyra svarsalternativ) -->
@@ -88,32 +88,32 @@
             type="checkbox"
             name="Stronghold"
             id="town"
-            value="Stronghold"
+            value="true"
           />
           <label for="Stronghold">Stronghold</label>
         </li>
         <li>
-          <input type="checkbox" name="Tower" id="town" value="Tower" />
+          <input type="checkbox" name="Tower" id="town" value="false" />
           <label for="Tower">Tower</label>
         </li>
         <li>
-          <input type="checkbox" name="Dungeon" id="town" value="Dungeon" />
+          <input type="checkbox" name="Dungeon" id="town" value="false" />
           <label for="Dungeon">Dungeon</label>
         </li>
         <li>
-          <input type="checkbox" name="Rampart" id="town" value="Rampart" />
+          <input type="checkbox" name="Rampart" id="town" value="false" />
           <label for="Rampart">Rampart</label>
         </li>
         <li>
-          <input type="checkbox" name="Fortress" id="town" value="Fortress" />
+          <input type="checkbox" name="Fortress" id="town" value="true" />
           <label for="Fortress">Fortress</label>
         </li>
         <li>
-          <input type="checkbox" name="Castle" id="town" value="Castle" />
+          <input type="checkbox" name="Castle" id="town" value="false" />
           <label for="Castle">Castle</label>
         </li>
         <li>
-          <input type="checkbox" name="Inferno" id="town" value="Inferno" />
+          <input type="checkbox" name="Inferno" id="town" value="false" />
           <label for="Inferno">Inferno</label>
         </li>
         <li>
@@ -121,13 +121,14 @@
             type="checkbox"
             name="Necropolis"
             id="town"
-            value="Necropolis"
+            value="false"
           />
           <label for="Necropolis">Necropolis</label>
         </li>
       </ol>
     </div>
     <button id="getResults">Rätta svaren</button>
+    <div id="results"></div>
     <script src="main.js"></script>
   </body>
 </html>
