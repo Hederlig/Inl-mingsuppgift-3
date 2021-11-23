@@ -3,6 +3,9 @@ let checkAwnser = document.querySelector("#getResults");
 let list = (document.querySelector("#list").style.listStyle = "none");
 let awnser = document.querySelectorAll("[value='true']");
 let results = document.querySelector("#results");
+
+let stronghold = document.getElementsByName("Stronghold");
+let fortress = document.getElementsByName("Fortress");
 //Från länken
 var checks = document.querySelectorAll(".towns");
 
@@ -19,22 +22,23 @@ button.addEventListener("click", () => {
 
 // https://stackoverflow.com/questions/43456868/javascript-limit-selected-checkboxes-to-2
 // Studera och lär dig.
-var max = 2;
-for (var i = 0; i < checks.length; i++)
-  checks[i].onclick = selectiveCheck;
-function selectiveCheck (event) {
-  var checkedChecks = document.querySelectorAll(".towns:checked");
-  if (checkedChecks.length >= max + 1)
-    return false;
-}
+// var max = 2;
+// for (var i = 0; i < checks.length; i++)
+//   checks[i].onclick = selectiveCheck;
+// function selectiveCheck (event) {
+//   var checkedChecks = document.querySelectorAll(".towns:checked");
+//   if (checkedChecks.length >= max + 1)
+//     return false;
+// }
 
 checkAwnser.addEventListener("click", () => {
   let counter = 0;
   awnser.forEach((input) => {
-    if (input.checked) {
-      counter++;
+    if (stronghold.checked) {
+        counter++;
     }
+
+      
   });
   results.innerHTML = " Your final score is " + counter + " out of 7";
 });
-

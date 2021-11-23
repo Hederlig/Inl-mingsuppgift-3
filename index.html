@@ -11,9 +11,9 @@
 
     <button id="changeButton" type="button">Change Mode</button>
     <!-- Tre frågor ska bestå av ett påstående. Svarsalternativ: Sant och falskt. -->
-    <label for="q1"><h3>Fråga 1</h3></label>
+    <label for="q1"><h3>Question 1</h3></label>
     <div id="q1">
-      <text>Är the Punisher grym?</text>
+      <text>Is the Punisher awesome?</text>
       <legend for="type"></legend>
 
       <input type="radio" name="question1" id="true1" value="true" />
@@ -22,18 +22,18 @@
       <input type="radio" name="question1" id="false1" value="false" />
       <label for="false">False</label>
     </div>
-    <label for="q2"><h3>Fråga 2</h3></label>
+    <label for="q2"><h3>Question 2</h3></label>
     <div id="q2">
-      <text>Punisher's namn är Frank Castle</text>
+      <text>Punisher's name is Frank Castle</text>
       <legend for="type"></legend>
       <input type="radio" name="question2" id="true2" value="true" />
       <label for="all">True</label>
       <input type="radio" name="question2" id="false2" value="false" />
       <label for="shoes">False</label>
     </div>
-    <label for="q3"><h3>Fråga 3</h3></label>
+    <label for="q3"><h3>Question 3</h3></label>
     <div id="q3">
-      <text>Punisher's militär grundutbildning var U.S.ARMY.</text>
+      <text>Punisher's got his military training in U.S.ARMY.</text>
       <legend for="type"></legend>
       <input type="radio" name="question3" id="true3" value="false" />
       <label for="all">True</label>
@@ -41,20 +41,23 @@
       <label for="shoes">False</label>
     </div>
     <!-- Tre frågor ska ha tre svarsalternativ.  -->
-    <label for="q4"><h3>Fråga 4</h3></label>
+    <label for="q4"><h3>Question 4</h3></label>
     <div id="q4">
-      <text>Vad gör koden "radio free zerg" i StarCraft: Brood War?</text>
+      <text>What does the code "radio free zerg" do in StarCraft: Brood War?</text>
       <legend for="type"></legend>
       <input type="radio" name="question4" id="alt4" value="false" />
-      <label for="alt1">Ger dig en unik enhet</label>
+      <label for="alt1">
+        Gives you a unique Unit</label>
       <input type="radio" name="question4" id="alt4" value="false" />
-      <label for="alt2">Sätter igång Zerg radio</label>
+      <label for="alt2">
+        Turns on Zerg radio</label>
       <input type="radio" name="question4" id="alt4" value="true" />
-      <label for="alt3">Spelar upp en låt</label>
+      <label for="alt3">
+        Plays a song</label>
     </div>
-    <label for="q5"><h3>Fråga 5</h3></label>
+    <label for="q5"><h3>Question 5</h3></label>
     <div id="q5">
-      <text>Vilken kod ger dig "God Mode" i Warcraft 3</text>
+      <text>Which code gives you "God Mode" in Warcraft 3</text>
       <legend for="type"></legend>
       <input type="radio" name="question5" id="alt5" value="false" />
       <label for="alt5">For The Hord</label>
@@ -63,9 +66,9 @@
       <input type="radio" name="question5" id="alt5" value="true" />
       <label for="alt5">Whos your Daddy</label>
     </div>
-    <label for="q6"><h3>Fråga 6</h3></label>
+    <label for="q6"><h3>Question 6</h3></label>
     <div id="q6">
-      <text>Vilken kod gör dig odödlig i spelet DOOM?</text>
+      <text>What code makes you immortal in the game DOOM?</text>
       <legend for="type"></legend>
       <input type="radio" name="question6" id="alt6" value="false" />
       <label for="alt6">ID10T</label>
@@ -75,16 +78,16 @@
       <label for="alt6">IDKFA</label>
     </div>
     <!-- En fråga ska besvaras med checkboxar (minst fyra svarsalternativ) -->
-    <label for="q7"><h3>Fråga 7</h3></label>
+    <label for="q7"><h3>Question 7</h3></label>
     <div id="q7">
       <text
-        >Där finns 8 towns i Heroes of Might and Magic 3, vilka 2 är
-        Neutrala?</text
+        >There are 8 towns in Heroes of Might and Magic 3, of which 2 are Neutral?</text
       >
       <legend for="type"></legend>
+      <form  class ="checklist">
       <ol id="list">
         <li>
-          <input type="checkbox" name="Stronghold" id="town" value="true" class="towns"/>
+          <input type="checkbox" name="Stronghold" id="town" value="true" class="towns" required/>
           <label for="Stronghold">Stronghold</label>
         </li>
         <li>
@@ -100,7 +103,7 @@
           <label for="Rampart">Rampart</label>
         </li>
         <li>
-          <input type="checkbox" name="Fortress" id="town" value="true" class="towns" />
+          <input type="checkbox" name="Fortress" id="town" value="true"  class="towns" required />
           <label for="Fortress">Fortress</label>
         </li>
         <li>
@@ -108,16 +111,18 @@
           <label for="Castle">Castle</label>
         </li>
         <li>
-          <input type="checkbox" name="Inferno" id="town" value="false" class="towns"/>
+          <input type="checkbox" name="Inferno" id="town" value="false"class="towns"/>
           <label for="Inferno">Inferno</label>
         </li>
         <li>
-          <input type="checkbox" name="Necropolis" id="town" value="false" class="towns"/>
+          <input type="checkbox" name="Necropolis" id="town" value="false"class="towns"/>
           <label for="Necropolis">Necropolis</label>
         </li>
       </ol>
+    </form>
     </div>
-    <button id="getResults">Rätta svaren</button>
+
+    <button id="getResults">Correct the quiz</button>
     <div id="results"></div>
     <script src="main.js"></script>
   </body>
