@@ -16,110 +16,160 @@
       <text>Is the Punisher awesome?</text>
       <legend for="type"></legend>
 
-      <input type="radio" name="question1" id="true1" value="true" />
+      <input type="radio" name="question1" id="true1" />
       <label for="true">True</label>
 
-      <input type="radio" name="question1" id="false1" value="false" />
+      <input type="radio" name="question1" />
       <label for="false">False</label>
     </div>
     <label for="q2"><h3>Question 2</h3></label>
     <div id="q2">
       <text>Punisher's name is Frank Castle</text>
       <legend for="type"></legend>
-      <input type="radio" name="question2" id="true2" value="true" />
+      <input type="radio" name="question2" id="true2" />
       <label for="all">True</label>
-      <input type="radio" name="question2" id="false2" value="false" />
+      <input type="radio" name="question2" />
       <label for="shoes">False</label>
     </div>
     <label for="q3"><h3>Question 3</h3></label>
     <div id="q3">
       <text>Punisher's got his military training in U.S.ARMY.</text>
       <legend for="type"></legend>
-      <input type="radio" name="question3" id="true3" value="false" />
+      <input type="radio" name="question3" id="false3" />
       <label for="all">True</label>
-      <input type="radio" name="question3" id="false3" value="true" />
+      <input type="radio" name="question3" id="true3" value="true" />
       <label for="shoes">False</label>
     </div>
     <!-- Tre frågor ska ha tre svarsalternativ.  -->
     <label for="q4"><h3>Question 4</h3></label>
     <div id="q4">
-      <text>What does the code "radio free zerg" do in StarCraft: Brood War?</text>
+      <text
+        >What does the code "radio free zerg" do in StarCraft: Brood War?</text
+      >
       <legend for="type"></legend>
-      <input type="radio" name="question4" id="alt4" value="false" />
-      <label for="alt1">
-        Gives you a unique Unit</label>
-      <input type="radio" name="question4" id="alt4" value="false" />
-      <label for="alt2">
-        Turns on Zerg radio</label>
-      <input type="radio" name="question4" id="alt4" value="true" />
-      <label for="alt3">
-        Plays a song</label>
+      <input type="radio" name="question4" id="false4" />
+      <label for="alt1"> Gives you a unique Unit</label>
+      <input type="radio" name="question4" id="false4" />
+      <label for="alt2"> Turns on Zerg radio</label>
+      <input type="radio" name="question4" id="true4" value="true" />
+      <label for="alt3"> Plays a song</label>
     </div>
     <label for="q5"><h3>Question 5</h3></label>
     <div id="q5">
       <text>Which code gives you "God Mode" in Warcraft 3</text>
       <legend for="type"></legend>
-      <input type="radio" name="question5" id="alt5" value="false" />
+      <input type="radio" name="question5" id="false5" />
       <label for="alt5">For The Hord</label>
-      <input type="radio" name="question5" id="alt5" value="false" />
+      <input type="radio" name="question5" id="false5" />
       <label for="alt5">Blizzard is almighty </label>
-      <input type="radio" name="question5" id="alt5" value="true" />
+      <input type="radio" name="question5" id="true5" value="true" />
       <label for="alt5">Whos your Daddy</label>
     </div>
     <label for="q6"><h3>Question 6</h3></label>
     <div id="q6">
       <text>What code makes you immortal in the game DOOM?</text>
       <legend for="type"></legend>
-      <input type="radio" name="question6" id="alt6" value="false" />
+      <input type="radio" name="question6" id="false6" />
       <label for="alt6">ID10T</label>
-      <input type="radio" name="question6" id="alt6" value="true" />
+      <input type="radio" name="question6" id="true6" value="true" />
       <label for="alt6">IDDQD</label>
-      <input type="radio" name="question6" id="alt6" value="false" />
+      <input type="radio" name="question6" id="false6" />
       <label for="alt6">IDKFA</label>
     </div>
     <!-- En fråga ska besvaras med checkboxar (minst fyra svarsalternativ) -->
     <label for="q7"><h3>Question 7</h3></label>
     <div id="q7">
       <text
-        >There are 8 towns in Heroes of Might and Magic 3, of which 2 are Neutral?</text
+        >There are 8 towns in Heroes of Might and Magic 3, which are
+        Neutral?</text
       >
       <legend for="type"></legend>
-      <form  class ="checklist">
-      <ol id="list">
-        <li>
-          <input type="checkbox" name="Stronghold" id="town" value="true" class="towns" required/>
-          <label for="Stronghold">Stronghold</label>
-        </li>
-        <li>
-          <input type="checkbox" name="Tower" id="town" value="false" class="towns" />
-          <label for="Tower">Tower</label>
-        </li>
-        <li>
-          <input type="checkbox" name="Dungeon" id="town" value="false" class="towns" />
-          <label for="Dungeon">Dungeon</label>
-        </li>
-        <li>
-          <input type="checkbox" name="Rampart" id="town" value="false" class="towns"/>
-          <label for="Rampart">Rampart</label>
-        </li>
-        <li>
-          <input type="checkbox" name="Fortress" id="town" value="true"  class="towns" required />
-          <label for="Fortress">Fortress</label>
-        </li>
-        <li>
-          <input type="checkbox" name="Castle" id="town" value="false" class="towns"/>
-          <label for="Castle">Castle</label>
-        </li>
-        <li>
-          <input type="checkbox" name="Inferno" id="town" value="false"class="towns"/>
-          <label for="Inferno">Inferno</label>
-        </li>
-        <li>
-          <input type="checkbox" name="Necropolis" id="town" value="false"class="towns"/>
-          <label for="Necropolis">Necropolis</label>
-        </li>
-      </ol>
-    </form>
+      <form class="checklist">
+        <ol id="list">
+          <li>
+            <input
+              type="checkbox"
+              name="multiAwnser"
+              id="stronghold"
+              value="true"
+              class="towns"
+              required
+            />
+            <label for="Stronghold">Stronghold</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              name="multiAwnser"
+              id="tower"
+              value="false"
+              class="towns"
+            />
+            <label for="Tower">Tower</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              name="multiAwnser"
+              id="dungeon"
+              value="false"
+              class="towns"
+            />
+            <label for="Dungeon">Dungeon</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              name="multiAwnser"
+              id="rampart"
+              value="false"
+              class="towns"
+            />
+            <label for="Rampart">Rampart</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              name="multiAwnser"
+              id="fortress"
+              value="true"
+              class="towns"
+              required
+            />
+            <label for="Fortress">Fortress</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              name="multiAwnser"
+              id="castle"
+              value="false"
+              class="towns"
+            />
+            <label for="Castle">Castle</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              name="multiAwnser"
+              id="inferno"
+              value="false"
+              class="towns"
+            />
+            <label for="Inferno">Inferno</label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              name="multiAwnser"
+              id="necropolis"
+              value="false"
+              class="towns"
+            />
+            <label for="Necropolis">Necropolis</label>
+          </li>
+        </ol>
+      </form>
     </div>
 
     <button id="getResults">Correct the quiz</button>

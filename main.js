@@ -1,13 +1,8 @@
 let button = document.querySelector("#changeButton");
 let checkAwnser = document.querySelector("#getResults");
 let list = (document.querySelector("#list").style.listStyle = "none");
-let awnser = document.querySelectorAll("[value='true']");
-let results = document.querySelector("#results");
-
-let stronghold = document.getElementsByName("Stronghold");
-let fortress = document.getElementsByName("Fortress");
-//Från länken
-var checks = document.querySelectorAll(".towns");
+let div = document.getElementById("results")
+let points = document.createElement("p")
 
 button.addEventListener("click", () => {
   let body = document.querySelector("body");
@@ -20,25 +15,49 @@ button.addEventListener("click", () => {
   }
 });
 
-// https://stackoverflow.com/questions/43456868/javascript-limit-selected-checkboxes-to-2
-// Studera och lär dig.
-// var max = 2;
-// for (var i = 0; i < checks.length; i++)
-//   checks[i].onclick = selectiveCheck;
-// function selectiveCheck (event) {
-//   var checkedChecks = document.querySelectorAll(".towns:checked");
-//   if (checkedChecks.length >= max + 1)
-//     return false;
-// }
-
 checkAwnser.addEventListener("click", () => {
   let counter = 0;
-  awnser.forEach((input) => {
-    if (stronghold.checked) {
-        counter++;
-    }
+  if (document.getElementById("true1").checked) {
+    counter++;
+  }
+  if (document.getElementById("true2").checked) {
+    counter++;
+  }
+  if (document.getElementById("true3").checked) {
+    counter++;
+  }
+  if (document.getElementById("true4").checked) {
+    counter++;
+  }
+  if (document.getElementById("true5").checked) {
+    counter++;
+  }
+  if (document.getElementById("true6").checked) {
+    counter++;
+  }
+  if (
+        document.getElementById("stronghold").checked == true &&
+    document.getElementById("fortress").checked == true &&
+    document.getElementById("tower").checked == false &&
+    document.getElementById("necropolis").checked == false &&
+    document.getElementById("inferno").checked == false && 
+    document.getElementById("castle").checked == false &&
+    document.getElementById("dungeon").checked == false &&
+    document.getElementById("rampart").checked == false
+  ) {
+    counter++;
+  }
 
-      
-  });
-  results.innerHTML = " Your final score is " + counter + " out of 7";
+
+  points.textContent = `Your final score is ${counter} out of 7`;
+  div.appendChild(points);
+ 
+  if (counter == 7) {
+    points.style.color = "#32CD32";
+} else if (counter > 3) {
+    points.style.color = "#FFA500";
+} else {
+    points.style.color = "#ff0000";
+}
+
 });
