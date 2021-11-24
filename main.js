@@ -36,7 +36,7 @@ checkAwnser.addEventListener("click", () => {
     counter++;
   }
   if (
-        document.getElementById("stronghold").checked == true &&
+    document.getElementById("stronghold").checked == true &&
     document.getElementById("fortress").checked == true &&
     document.getElementById("tower").checked == false &&
     document.getElementById("necropolis").checked == false &&
