@@ -2,7 +2,7 @@ let button = document.querySelector("#changeButton");
 let checkAwnser = document.querySelector("#getResults");
 let list = (document.querySelector("#list").style.listStyle = "none");
 let div = document.getElementById("results")
-let points = document.createElement("p")
+let points = document.createElement("h1")
 
 button.addEventListener("click", () => {
   let body = document.querySelector("body");
